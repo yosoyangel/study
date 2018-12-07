@@ -14,6 +14,8 @@ public class HelloWorld {
 
 //        driver.findElement(By.className("field-search")).sendKeys("Hello world!\n");
         driver.findElement(By.className("field-search")).sendKeys("Hello world!" + Keys.ENTER);
+
+        Assert.assertTrue(driver.findElements(By.className("search-page")).size() >0, "Search page should be open");
 //        driver.findElement(By.linkText("Chat")).click();
 
 //        driver.findElement(By.className("but-search")).click();

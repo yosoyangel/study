@@ -40,12 +40,10 @@ public class LoginTest {
                */
         /*Assert.assertEquals(actualMessage, realMessage,
                 "The message should be 'The password does not meet the requirements'");*/
-        
+
         String infoMessage = String.format("The message should be '%s'", realMessage);
 
         Assert.assertEquals(actualMessage, realMessage,infoMessage);
-
-
 
         System.out.println(driver.findElement(By.id("any_message")).getText());
 
